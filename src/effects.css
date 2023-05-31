@@ -1,0 +1,718 @@
+/*GLOBAL-STYLES*/
+/*GLOBAL-FONTS*/
+/*BADGE*/
+.nav2 {
+  position: relative;
+}
+.nav2 .badge {
+  position: absolute;
+  top: 5px;
+  right: -670px;
+}
+
+main .heading {
+  color: aqua;
+}
+
+/*--HOME--*/
+/*HOME_PAGE*/
+.wall-home img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.home-page {
+  position: relative;
+}
+.home-page img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+.btn-order a {
+  text-decoration: none;
+}
+
+/*WALLPAPER*/
+.wallpaper {
+  display: none;
+  position: absolute;
+  z-index: -1;
+  background-size: cover;
+}
+
+/*CONTAINER-TITLE*/
+.container-title {
+  position: relative;
+  height: 100vh;
+  background-color: #FAF3E6;
+  display: flex;
+  padding: 200px 200px;
+}
+.container-title img {
+  height: 350px;
+  width: 500px;
+  box-shadow: 10px 10px 30px black;
+}
+.container-title .content {
+  margin-left: 120px;
+}
+.container-title h1 {
+  font-family: "Amatic SC", cursive;
+  color: #154726;
+}
+.container-title p {
+  font-family: "Caveat", cursive;
+  color: #154726;
+  font-size: 23px;
+  padding-top: 20px;
+  text-align: justify;
+  text-transform: none;
+}
+.container-title button {
+  background-color: #B04C35;
+  color: #FAF3E6;
+  border: none;
+  border-radius: 10px;
+  transition-duration: 0.3s;
+  height: 40px;
+  width: 120px;
+}
+.container-title button:hover {
+  border-radius: 20px;
+  background-color: #b96653;
+}
+
+/*CONTAINER-1*/
+.container1 {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  background-color: #97C74B;
+  color: #154726;
+}
+.container1 img {
+  position: absolute;
+  right: 0;
+  height: 100vh;
+  object-fit: cover;
+  width: 750px;
+}
+.container1 .content1 {
+  display: block;
+  width: 550px;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+}
+.container1 h1 {
+  text-transform: none;
+  font-weight: bolder;
+  font-size: 50px;
+}
+.container1 p {
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+}
+
+/*CONTAINER2*/
+.container2 {
+  height: 100vh;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  background-color: #FF5B4E;
+  color: #5B1A1D;
+}
+.container2 img {
+  position: absolute;
+  left: 0;
+  height: 100vh;
+  object-fit: cover;
+  width: 760px;
+}
+.container2 .content2 {
+  display: block;
+  width: 550px;
+  position: absolute;
+  top: 200px;
+  right: 100px;
+}
+.container2 h1 {
+  text-transform: none;
+  font-weight: bolder;
+  font-size: 50px;
+}
+.container2 p {
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+}
+
+/*NAV LINKS*/
+nav a {
+  text-decoration: none;
+  color: #154726;
+}
+nav a:hover {
+  text-decoration: none;
+  color: #154726;
+}
+
+/*--SHOP_COMP--*/
+/*SHOP-CONTAINER*/
+.shop-container {
+  background-color: #F5F5F7;
+  position: relative;
+  /*SCROLL_UP_BTN; CONFIG IN MEALSLIST*/
+}
+.shop-container .meals {
+  background-color: #F5F5F7;
+}
+.shop-container article {
+  padding: 15px;
+  /*TITLE_EFFECT*/
+  /*IMG_EFFECT*/
+}
+.shop-container article a {
+  text-decoration: none;
+}
+.shop-container article .meal-title {
+  color: #154726;
+  font-size: 25px;
+  font-family: "Caveat", cursive;
+  font-weight: bold;
+}
+.shop-container article .meal-title .meal-tl:hover {
+  text-decoration: underline;
+}
+.shop-container article .meal-title .meal-discp {
+  display: flex;
+}
+.shop-container article .meal-title .meal-discp .meal-cat {
+  text-align: center;
+  border: 1px solid #154726;
+  border-radius: 5px;
+  background-color: #154726;
+  color: #FAF3E6;
+  font-size: 20px;
+  height: 30px;
+  width: 80px;
+  transition-duration: 0.5s;
+}
+.shop-container article .meal-title .meal-discp .meal-cat:hover {
+  background-color: #FAF3E6;
+  color: #154726;
+  border: none;
+}
+.shop-container article .meal-title .meal-discp .meal-price {
+  text-align: center;
+  margin-left: 10px;
+  border: 1px solid #B04C35;
+  border-radius: 5px;
+  background-color: #B04C35;
+  color: #FAF3E6;
+  font-size: 20px;
+  height: 30px;
+  width: 50px;
+  transition-duration: 0.5s;
+}
+.shop-container article .meal-title .meal-discp .meal-price:hover {
+  background-color: #FAF3E6;
+  color: #154726;
+  border: none;
+}
+.shop-container article img {
+  height: 600px;
+  width: 400px;
+  border-radius: 25px;
+}
+.shop-container .btn-up {
+  position: fixed;
+  top: 700px;
+  right: 20px;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #C0705D;
+  border-radius: 50px;
+  background-color: #C0705D;
+  color: white;
+  cursor: pointer;
+}
+
+/*FILTER COMP.*/
+.filter-section {
+  position: relative;
+}
+.filter-section .meal-title {
+  position: absolute;
+  top: 100px;
+  left: 700px;
+  color: #FAF3E6;
+  font-size: 90px;
+  font-family: "Amatic SC", cursive;
+}
+.filter-section .meal-search-bar input {
+  width: 500px;
+}
+.filter-section .meal-search-bar .input-bar input {
+  position: absolute;
+  top: 320px;
+  height: 35px;
+  left: 350px;
+  width: 800px;
+  border: 2px solid #154726;
+  border-radius: 15px;
+  transition-duration: 1s;
+}
+.filter-section .meal-search-bar .input-bar input:hover {
+  box-shadow: 5px 5px 90px #154726;
+  border-radius: 20px;
+}
+.filter-section .meal-search-bar .input-bar span {
+  position: absolute;
+  top: 325px;
+  right: 380px;
+  color: #154726;
+}
+.filter-section .meal-select form {
+  display: block;
+}
+.filter-section .filtering {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 50px 400px;
+}
+.filter-section .filtering label {
+  font-family: "Caveat", cursive;
+  font-size: 25px;
+  color: #154726;
+}
+.filter-section .filtering select {
+  background-color: #EAEDE8;
+  -webkit-text-fill-color: #154726;
+  border: 1px solid #154726;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #154726;
+  text-align: center;
+}
+.filter-section .filtering .select-bar {
+  width: 180px;
+}
+
+/*--SELECTED_MEALS--*/
+.selected-meals {
+  height: 100vh;
+  background-color: #F5F5F7;
+  color: black;
+  position: relative;
+  display: flex;
+  padding: 20px 50px;
+}
+.selected-meals .col-4 img {
+  height: 650px;
+  width: 450px;
+  border-radius: 20px;
+}
+.selected-meals .col-8 {
+  padding: 20px 50px;
+}
+.selected-meals .col-8 h1 {
+  color: #154726;
+  font-family: "Amatic SC", cursive;
+  font-size: 80px;
+}
+.selected-meals .col-8 h3 {
+  font-family: "Caveat", cursive;
+  font-size: 25px;
+  border: 1px solid #F1753F;
+  border-radius: 10px;
+  color: #5B1A1D;
+  background-color: #F1753F;
+  width: 100px;
+  text-align: center;
+}
+.selected-meals .col-8 h4 {
+  font-family: "Caveat", cursive;
+  border: 1px solid #FFD552;
+  border-radius: 10px;
+  color: #154726;
+  background-color: #FFD552;
+  width: 80px;
+  text-align: center;
+}
+.selected-meals .col-8 h6 {
+  font-family: "Caveat", cursive;
+  color: #154726;
+  font-size: 30px;
+  text-transform: none;
+}
+.selected-meals .btn-cart {
+  position: absolute;
+  bottom: 225px;
+  right: 500px;
+  height: 45px;
+  width: 120px;
+  font-size: 25px;
+  font-family: "Amatic SC", cursive;
+  border-radius: 15px;
+  background-color: #154726;
+  color: #FAF3E6;
+  transition-duration: 0.5s;
+}
+.selected-meals .btn-cart:hover {
+  border-radius: 25px;
+  box-shadow: 5px 5px 10px #154726;
+}
+
+/*--CART--*/
+.empty-cart-items {
+  height: 100vh;
+}
+.empty-cart-items .empty-title {
+  position: absolute;
+  top: 200px;
+  left: 600px;
+  font-family: "Caveat", cursive;
+  font-weight: bold;
+  font-size: 40px;
+  color: #154726;
+}
+.empty-cart-items .empty-shop-now {
+  position: relative;
+  top: 270px;
+  left: 710px;
+  font-family: "Amatic SC", cursive;
+  color: #154726;
+  background-color: #FFD550;
+  border-color: #FFD550;
+  border-radius: 15px;
+  font-size: 30px;
+  transition-duration: 0.5s;
+}
+.empty-cart-items .empty-shop-now:hover {
+  border-radius: 25px;
+  color: #154726;
+}
+
+.cart-items {
+  background-color: white;
+  color: black;
+  position: relative;
+  /*EMPTY*/
+}
+.cart-items article {
+  display: flex;
+}
+.cart-items article img {
+  height: 450px;
+  width: 300px;
+  padding: 10px;
+}
+.cart-items .cart-top-sec {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+.cart-items .cart-top-sec button {
+  background-color: #154726;
+  color: #FAF3E6;
+  font-family: "Caveat", cursive;
+  text-transform: none;
+  font-size: 20px;
+  border-radius: 20px;
+}
+.cart-items .cart-top-sec span {
+  color: #154726;
+}
+
+.all-cart-items {
+  display: block;
+}
+.all-cart-items img {
+  height: 250px;
+  width: 150px;
+  padding: 10px;
+}
+
+.btn-amount {
+  display: flex;
+  align-items: center;
+}
+
+/*CARTITEMS*/
+.all-cart-items .btn-del {
+  border: none;
+  background-color: white;
+  color: red;
+}
+
+/*AMOUNT_BUTTONS*/
+.btn-amount .btn-minus {
+  border: none;
+  background-color: white;
+}
+.btn-amount .btn-plus {
+  border: none;
+  background-color: white;
+}
+
+/*CART_FOOTER*/
+.cart-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+}
+.cart-footer .col-6 a {
+  padding: 10px;
+}
+.cart-footer .col-6 .btn-cart {
+  background-color: #154726;
+  color: #FAF3E6;
+  font-family: "Caveat", cursive;
+  text-transform: none;
+  font-size: 20px;
+  border-radius: 15px;
+}
+.cart-footer .col-6 .btn-cart:hover {
+  background-color: #1e5b33;
+  border-radius: 20px;
+}
+.cart-footer .col-6 .btn-clear-cart {
+  transition-duration: 0.5s;
+  background-color: #B04C35;
+  color: #FAF3E6;
+  font-family: "Caveat", cursive;
+  text-transform: none;
+  font-size: 20px;
+  border-radius: 15px;
+}
+.cart-footer .col-6 .btn-clear-cart:hover {
+  background-color: #C0705D;
+  border-radius: 20px;
+}
+
+/*CART_TOTAL*/
+.cart-bill {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  align-items: center;
+}
+.cart-bill p {
+  font-family: "Caveat", cursive;
+  color: #154726;
+  font-size: 30px;
+}
+.cart-bill h3, .cart-bill h4 {
+  font-family: "Caveat", cursive;
+  color: #154726;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/*CART_CHECKOUT*/
+.btn-checkout {
+  height: 40px;
+  width: 100px;
+  border-radius: 15px;
+  border: none;
+  background-color: #FFD550;
+  color: #154726;
+  font-family: "Caveat", cursive;
+  font-size: 25px;
+  font-weight: bold;
+  transition-duration: 0.5s;
+}
+
+.btn-checkout:hover {
+  border-radius: 20px;
+}
+
+/*SOCIAL_MEDIA*/
+.sm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #154726;
+  padding: 10px;
+}
+.sm span {
+  display: flex;
+  padding: 5px;
+  font-family: "Caveat", cursive;
+}
+
+/*HOME*/
+.home {
+  height: 100vh;
+}
+
+/*ABOUT*/
+.about {
+  position: relative;
+  height: 100vh;
+}
+.about h1 {
+  position: absolute;
+  top: 160px;
+  left: 450px;
+  font-family: "Amatic SC", cursive;
+  color: #FAF3E6;
+  font-size: 65px;
+}
+.about p {
+  padding: 25px;
+  font-family: "Caveat", cursive;
+  font-size: 25px;
+  color: #154726;
+  text-transform: none;
+}
+
+/*ARTICLES*/
+.article {
+  height: 100vh;
+  padding: 20px;
+}
+.article h3 {
+  font-family: "Caveat", cursive;
+  color: #154726;
+}
+
+/*CONTACT_US*/
+.contact-us {
+  position: relative;
+  height: 100vh;
+  margin-top: 300px;
+}
+.contact-us .sm {
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.contact-us .sm span {
+  position: relative;
+  right: 15px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+/*FOOTER*/
+.footer {
+  height: 100vh;
+  background-color: #2F4E37;
+  color: #FAF3E6;
+  display: flex;
+  padding: 50px;
+  position: relative;
+}
+.footer .notice {
+  position: absolute;
+  bottom: 10px;
+  right: 600px;
+}
+.footer form {
+  padding: 10px;
+  position: relative;
+}
+.footer form button {
+  background-color: #395740;
+  color: #FAF3E6;
+  border: none;
+  position: absolute;
+  left: 370px;
+  top: 20px;
+}
+.footer .col-6 h1 {
+  font-family: "Amatic SC", cursive;
+  font-size: 60px;
+}
+.footer .col-6 span {
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+}
+.footer .col-6 input {
+  height: 50px;
+  width: 400px;
+  border-radius: 20px;
+  background-color: #395740;
+  color: #FAF3E6;
+  border: none;
+  padding: 10px;
+}
+.footer .col-6 .footer-logo {
+  position: relative;
+  margin-top: 280px;
+  cursor: pointer;
+}
+.footer .col-6 .footer-logo img {
+  height: 50px;
+  width: 50px;
+}
+.footer .col-6 .footer-logo span {
+  font-family: "Amatic SC", cursive;
+  font-size: 35px;
+  position: absolute;
+  top: 2px;
+}
+.footer .col-6 .footer-logo .reserve {
+  font-family: "Caveat", cursive;
+  margin-left: 10px;
+}
+.footer .col-6 ul {
+  padding-left: 250px;
+  list-style: none;
+}
+.footer .col-6 ul a {
+  text-decoration: none;
+  color: #FAF3E6;
+}
+.footer .col-6 ul li {
+  font-family: "Caveat", cursive;
+  font-size: 25px;
+}
+.footer .col-6 .footer-info a {
+  text-decoration: none;
+  color: #FAF3E6;
+}
+.footer .col-6 .footer-info .footer-sm {
+  margin-top: 250px;
+}
+.footer .col-6 .footer-info .footer-sm .sm {
+  text-align: center;
+  color: #FAF3E6;
+}
+
+/*FAQ*/
+.faq {
+  height: 100vh;
+}
+.faq .faq-title {
+  font-family: "Caveat", cursive;
+  color: #154726;
+  font-size: 50px;
+  margin-left: 680px;
+}
+.faq .accordion-header {
+  background-color: #EAEDE8;
+  color: #154726;
+  font-family: "Caveat", cursive;
+}
+.faq .accordion-header .btn {
+  background-color: #BCCBB8;
+  border: none;
+}
+.faq .accordion-body {
+  background-color: #EAEDE8;
+  color: #154726;
+  font-family: "Caveat", cursive;
+  font-size: 25px;
+  text-transform: none;
+}
+
+/*# sourceMappingURL=effects.css.map */

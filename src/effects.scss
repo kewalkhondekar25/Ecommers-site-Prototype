@@ -1,0 +1,812 @@
+/*GLOBAL-STYLES*/
+$Primary:#154726;
+$Secondary:#FAF3E6;
+$Tertiary:#F5F5F7;
+$Quaternary:#B04C35;
+/*GLOBAL-FONTS*/
+$PrimaryFont:'Amatic SC', cursive;
+$SecondaryFont: 'Caveat', cursive;
+
+/*BADGE*/
+.nav2{
+    position: relative;
+    .badge{
+        position: absolute;
+        top: 5px;
+        right: -670px;
+    }
+}
+
+main{
+    .heading{
+        color: aqua;
+    }
+}
+
+/*--HOME--*/
+
+/*HOME_PAGE*/
+
+.wall-home{
+    img{
+        //z-index: -2;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.home-page{
+    position: relative;
+   img{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+   }
+}
+
+.btn-order{
+    a{
+        text-decoration: none;
+    }
+}
+
+/*WALLPAPER*/
+.wallpaper{
+    display: none;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+    //height: 100vh;
+    // width: 100vw
+   
+}
+
+
+/*CONTAINER-TITLE*/
+.container-title{
+    position: relative;
+    height: 100vh;
+    background-color: $Secondary;
+    display: flex;
+    padding: 200px 200px;
+
+    img{
+        height: 350px;
+        width: 500px;
+        box-shadow: 10px 10px 30px black;
+    }
+    .content{
+        margin-left: 120px;
+    }
+    h1{
+        font-family: $PrimaryFont;
+        color: $Primary;
+    }
+    p{
+        font-family: $SecondaryFont;
+        color: $Primary;
+        font-size: 23px;
+        padding-top: 20px;
+        text-align: justify;
+        text-transform: none; 
+    }
+
+    button{
+        background-color: #B04C35;
+        color: $Secondary;
+        border: none;
+        border-radius: 10px;
+        transition-duration: 0.3s;
+        height: 40px;
+        width: 120px;
+    }
+    button:hover{
+        border-radius: 20px;
+        background-color: #b96653;
+    }
+}
+/*CONTAINER-1*/
+.container1{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    background-color: #97C74B;
+    color: #154726;
+     
+    img{
+        position: absolute;
+        right: 0;
+        height: 100vh;
+        object-fit: cover;
+        width: 750px;
+    }
+    .content1{
+        display: block;
+        width: 550px;
+        position: absolute;
+        top: 200px;
+        left: 100px;
+    }
+    h1{
+        text-transform: none;
+        font-weight:bolder;
+        font-size: 50px;
+    }
+    p{
+        font-family: $SecondaryFont;
+        font-size: 20px;
+    }
+}
+
+/*CONTAINER2*/
+.container2{
+    height: 100vh;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    background-color: #FF5B4E;
+    color: #5B1A1D;
+
+    img{
+        position: absolute;
+        left: 0;
+        height: 100vh;
+        object-fit: cover;
+        width: 760px;
+    }
+    .content2{
+        display: block;
+        width: 550px;
+        position: absolute;
+        top: 200px;
+        right: 100px;
+    }
+    h1{
+        text-transform: none;
+        font-weight:bolder;
+        font-size: 50px;
+    }
+    p{
+        font-family: $SecondaryFont;
+        font-size: 20px;
+    }
+}
+/*NAV LINKS*/
+nav{
+    a{
+        text-decoration: none;
+        color: $Primary;
+    }
+    a:hover{
+        text-decoration: none;
+        color: $Primary;
+    }
+}
+
+/*--SHOP_COMP--*/
+
+/*SHOP-CONTAINER*/
+.shop-container{
+    //height: 100%;
+    //width: 100vw;
+    //sass effects.scss effects.css
+    background-color: #F5F5F7;
+    position: relative;
+
+    .meals{
+        background-color: #F5F5F7;
+    }
+
+    article{
+        padding: 15px;
+        /*TITLE_EFFECT*/
+        a{
+            text-decoration: none;
+        }
+       
+        .meal-title{
+            color: $Primary;
+            font-size: 25px;
+            font-family: $SecondaryFont;
+            font-weight: bold;
+
+            
+            .meal-tl:hover{
+                text-decoration: underline;
+            }
+
+            .meal-discp{
+                display: flex;
+                .meal-cat{
+                    text-align: center;
+                    border: 1px solid $Primary;
+                    border-radius: 5px;
+                    background-color: $Primary;
+                    color: $Secondary;
+                    font-size: 20px;
+                    height: 30px;
+                    width: 80px;
+                    transition-duration: 0.5s;
+                }
+                .meal-cat:hover{
+                    background-color: $Secondary;
+                    color: $Primary;
+                    border: none;
+                }
+
+                .meal-price{
+                    text-align: center;
+                    margin-left: 10px;
+                    border: 1px solid #B04C35;
+                    border-radius: 5px;
+                    background-color: #B04C35;
+                    color: $Secondary;
+                    font-size: 20px;
+                    height: 30px;
+                    width: 50px;
+                    transition-duration: 0.5s;
+                }
+                .meal-price:hover{
+                    background-color: $Secondary;
+                    color: $Primary;
+                    border: none;
+                }
+            }
+        }
+        /*IMG_EFFECT*/
+        img{
+            height: 600px;
+            width: 400px;
+            border-radius: 25px;
+           
+        }
+    }
+    /*SCROLL_UP_BTN; CONFIG IN MEALSLIST*/
+    .btn-up{
+        position: fixed;
+        top: 700px;
+        right: 20px;
+        height: 30px;
+        width: 30px;
+        border: 1px solid #C0705D;
+        border-radius: 50px;
+        background-color: #C0705D;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+/*FILTER COMP.*/
+.filter-section{
+    position: relative;
+   
+    .meal-title{
+        position: absolute;
+        top: 100px;
+        left: 700px;
+        color: $Secondary;
+        font-size: 90px;
+        font-family: $PrimaryFont;
+    }
+    .meal-search-bar{
+        input{
+            width: 500px;
+        }
+        .input-bar{
+            input{
+                position: absolute;
+                top: 320px;
+                height: 35px;
+                left: 350px;
+                width: 800px;
+                border: 2px solid $Primary;
+                border-radius: 15px;
+                transition-duration: 1s;
+            }
+            input:hover{
+                box-shadow: 5px 5px 90px $Primary;
+                border-radius: 20px;
+                
+            }
+            span{
+                position: absolute;
+                top: 325px;
+                right: 380px;
+                color: $Primary;
+            }
+
+        }
+    }
+    .meal-select{
+        form{
+            display: block;
+        }
+    }
+    .filtering{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 50px 400px;
+
+        label{
+            font-family: $SecondaryFont;
+            font-size: 25px;
+            color: $Primary;
+        }
+        select{
+            background-color: #EAEDE8;
+            -webkit-text-fill-color: $Primary;
+            border: 1px solid $Primary;
+            
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px $Primary;
+            text-align: center; 
+        }
+        
+       
+        .select-bar{
+            width: 180px;
+        }
+    }
+}
+
+/*--SELECTED_MEALS--*/
+.selected-meals{
+    height: 100vh;
+    //width: 100vw;
+    background-color: $Tertiary;
+    color: black;
+    position: relative;
+    display: flex;
+    padding: 20px 50px;
+    .col-4{
+        img{
+            height: 650px;
+            width: 450px;
+            border-radius: 20px;
+        }
+    }
+    .col-8{
+        padding: 20px 50px;
+        
+        h1{
+            color: $Primary;
+            font-family: $PrimaryFont;
+            font-size: 80px;
+        }
+        h3{
+            font-family: $SecondaryFont;
+            font-size: 25px;
+            border: 1px solid #F1753F;
+            border-radius: 10px;
+            color: #5B1A1D;
+            background-color: #F1753F;
+            width: 100px;
+            text-align: center;
+        }
+        h4{
+            font-family: $SecondaryFont;
+            border: 1px solid #FFD552;
+            border-radius: 10px;
+            color: $Primary;
+            background-color: #FFD552;
+            width: 80px;
+            text-align: center;
+        }
+        h6{
+            font-family: $SecondaryFont;
+            color: $Primary;
+            font-size: 30px;
+            text-transform: none;
+        }
+    }
+    .btn-cart{
+        position: absolute;
+        bottom: 225px;
+        right: 500px;
+        height: 45px;
+        width: 120px;
+        font-size: 25px;
+        font-family: $PrimaryFont;
+        border-radius: 15px;
+        background-color: $Primary;
+        color: $Secondary;
+        transition-duration: 0.5s;
+    }
+    .btn-cart:hover{
+        border-radius: 25px;
+        box-shadow: 5px 5px 10px $Primary;
+    }
+   
+}
+
+/*--CART--*/
+.empty-cart-items{
+    height: 100vh;
+    .empty-title{
+        position: absolute;
+        top: 200px;
+        left: 600px;
+        font-family: $SecondaryFont;
+        font-weight: bold;
+        font-size: 40px;
+        color: $Primary;
+    }
+    .empty-shop-now{
+        position: relative;
+        top: 270px;
+        left: 710px;
+        font-family: $PrimaryFont;
+        color: $Primary;
+        background-color: #FFD550;
+        border-color: #FFD550;
+        border-radius: 15px;
+        font-size: 30px;
+        transition-duration: 0.5s;
+    }
+    .empty-shop-now:hover{
+        border-radius: 25px;
+        color: $Primary;
+    }
+
+}
+.cart-items{
+    //height:100vh;
+    //width: 100vw;
+    background-color: white;
+    color: black;
+    position: relative;
+
+    /*EMPTY*/
+   
+
+    article{
+        display: flex;
+
+        img{
+            height: 450px;
+            width: 300px;
+            padding: 10px;
+        }
+    }
+
+    .cart-top-sec{
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+
+        button{
+            background-color: $Primary;
+            color: $Secondary;
+            font-family: $SecondaryFont;
+            text-transform: none;
+            font-size: 20px; 
+            border-radius: 20px;
+        }
+        span{
+            
+            color: $Primary;
+            
+        }
+    }
+}
+.all-cart-items{
+    //height:100vh;
+    display: block;
+
+    img{
+        height: 250px;
+        width: 150px;
+        padding: 10px;
+    }
+
+
+}
+.btn-amount{
+    display: flex;
+    align-items: center;
+   
+}
+/*CARTITEMS*/
+.all-cart-items{
+    .btn-del{
+        border: none;
+        background-color: white;
+        color: red;
+    }
+}
+/*AMOUNT_BUTTONS*/
+.btn-amount{
+    .btn-minus{
+        border: none;
+        background-color: white;
+    }
+    .btn-plus{
+        border: none;
+        background-color: white;
+    }
+}
+
+/*CART_FOOTER*/
+.cart-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+
+    .col-6{
+       
+        a{
+            padding: 10px;
+        }
+        .btn-cart{
+            background-color: $Primary;
+            color: $Secondary;
+            font-family: $SecondaryFont;
+            text-transform: none;
+            font-size: 20px; 
+            border-radius: 15px;
+        }
+        .btn-cart:hover{
+            background-color: #1e5b33;
+            border-radius: 20px;
+        }
+        .btn-clear-cart{
+            transition-duration: 0.5s;
+            background-color: $Quaternary;
+            color: $Secondary;
+            font-family: $SecondaryFont;
+            text-transform: none;
+            font-size: 20px; 
+            border-radius: 15px;
+           
+        }
+        .btn-clear-cart:hover{
+            background-color: #C0705D;
+            border-radius: 20px;
+        }
+    }
+}
+
+/*CART_TOTAL*/
+.cart-bill{
+    //height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
+    p{
+        font-family: $SecondaryFont;
+        color: $Primary;
+        font-size: 30px;
+    }
+    h3,h4{
+        font-family: $SecondaryFont;
+        color: $Primary;
+        font-size: 40px;
+        font-weight: bold;
+    }
+}
+
+/*CART_CHECKOUT*/
+.btn-checkout{
+    height: 40px;
+    width: 100px;
+    border-radius: 15px;
+    border: none;
+    background-color: #FFD550;
+    color: $Primary;
+    font-family: $SecondaryFont;
+    font-size: 25px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+.btn-checkout:hover{
+    border-radius: 20px;
+}
+
+/*SOCIAL_MEDIA*/
+.sm{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    color: $Primary;
+    padding: 10px;
+    
+    span{
+        display: flex;
+        padding: 5px;
+        font-family: $SecondaryFont;
+    }
+   
+}
+/*HOME*/
+.home{
+    height: 100vh;
+}
+
+/*ABOUT*/
+.about{
+    position: relative;
+    height: 100vh;
+    h1{
+        position: absolute;
+        top: 160px;
+        left: 450px;
+        font-family: $PrimaryFont;
+        color: $Secondary;
+        font-size: 65px;
+    }
+    p{
+        padding: 25px;
+        font-family: $SecondaryFont;
+        font-size: 25px;
+        color: $Primary;
+        text-transform: none;
+    }
+}
+/*ARTICLES*/
+.article{
+    height: 100vh;
+    padding: 20px;
+    h3{
+        font-family: $SecondaryFont;
+        color: $Primary;
+    }
+}
+/*CONTACT_US*/
+.contact-us{
+    position: relative;
+    height: 100vh;
+    margin-top: 300px;
+    .sm{
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        span{
+            position: relative;
+            right: 15px;
+            font-size: 20px;
+            padding: 10px;
+           
+        }
+    }
+}
+/*FOOTER*/
+.footer{
+    height: 100vh;
+    background-color: #2F4E37;
+    color: $Secondary;
+    display: flex;
+    padding: 50px;
+    position: relative;
+    
+    .notice{
+        position: absolute;
+        bottom: 10px;
+        right: 600px;
+       
+    }
+    
+    form{
+        padding: 10px;
+        position: relative;
+        button{
+            background-color: #395740;
+            color: $Secondary;
+            border: none;
+            position: absolute;
+            left: 370px;
+            top: 20px;
+        }
+    }
+
+    .col-6{
+       
+       
+        h1{
+            font-family: $PrimaryFont;
+            font-size: 60px;
+        }
+        span{
+            font-family: $SecondaryFont;
+            font-size: 20px;
+        }
+        input{
+            height: 50px;
+            width: 400px;
+            border-radius: 20px;
+            background-color: #395740;
+            color: $Secondary;
+            border: none;
+            padding: 10px;
+
+        }
+        .footer-logo{
+            position: relative;
+            margin-top: 280px;
+            cursor: pointer;
+            
+            img{
+                height: 50px;
+                width: 50px;
+            }
+            span{
+                font-family: $PrimaryFont;
+                font-size: 35px;
+                position: absolute;
+                top: 2px;
+            }
+            .reserve{
+                font-family: $SecondaryFont;
+                margin-left: 10px;
+            }
+        }
+
+        ul{
+            padding-left: 250px;
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: $Secondary;
+            }
+            
+
+            li{
+                font-family: $SecondaryFont;
+                font-size: 25px;
+                
+            }
+        }
+        
+        .footer-info{
+            a{
+                text-decoration: none;
+                color: $Secondary;
+            }
+            .footer-sm{
+                margin-top: 250px;
+                .sm{
+                    text-align: center;
+                    color: $Secondary
+                }
+            }
+        }
+    
+    }
+    
+}
+
+/*FAQ*/
+.faq{
+
+    .faq-title{
+        font-family: $SecondaryFont;
+        color: $Primary;
+        font-size: 50px;
+        margin-left: 680px;
+       
+    }
+    height: 100vh;
+
+    .accordion-header{
+        background-color: #EAEDE8;
+        color: $Primary;
+        font-family: $SecondaryFont;
+
+        .btn{
+            background-color: #BCCBB8;
+            border: none;
+        }
+    }
+    .accordion-body{
+        background-color: #EAEDE8;
+        color: $Primary;
+        font-family: $SecondaryFont;
+        font-size: 25px;
+        text-transform: none;
+    }
+}
